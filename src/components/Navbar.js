@@ -3,6 +3,7 @@ import logo from '../assets/logo.png';
 import { BiWorld } from 'react-icons/bi';
 import { FiSearch } from 'react-icons/fi';
 import { AiOutlineUser } from 'react-icons/ai';
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -10,7 +11,7 @@ const Navbar = () => {
         <div className = "flex justify-between items-center border-b sm:mx-6 md:mx-12 lg:mx-12">
             {/* Left */}
             <div className = " h-20 flex">
-                <img src = {logo} className = "object-cover" />
+                <Link to = "/"><img src = {logo} className = "h-20 flex object-cover" /></Link>
             </div>
             {/* Middle */}
             <div className = "hidden lg:flex justify-center items-center relative shadow-sm shadow-gray-300 border rounded-full">

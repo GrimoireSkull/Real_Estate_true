@@ -1,9 +1,11 @@
 import React from 'react'
 import house1 from '../assets/house1.png'
+import house2 from '../assets/house2.png';
+import house3 from '../assets/house3.png';
 import Rental from './Rental'
 
 const rentalsData = [
-  {Id: "rental001", title: "Texas Ranch Retreat", image: house1, price: "1,620,000", description: "A nice abode"},
+  {Id: "rental001", title: "Texas Ranch Retreat", image: {house1, house2, house3}, price: "1,620,000", description: "A nice abode"},
   {Id: "rental002", title: "Modern Urban Oasis in Texas", image: house1, price: "980,000", description: "Discover the perfect urban escape."},
   {Id: "rental003", title: "Luxury Lakeside Estate", image: house1, price: "3,750,000", description: "Experience the pinnacle of lakeside living."},
   {Id: "rental004", title: "Historic Southern Charm", image: house1, price: "675,000", description: "Step into a piece of Southern history."},

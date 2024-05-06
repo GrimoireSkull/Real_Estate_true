@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import PListPage from './pages/PListPage';
+import ProfilePage from './pages/ProfilePage';
 import {rentalsData} from './components/Rentals';
 
 import {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "/property/:Id",
     element: <PListPage rentals={rentalsData}/>,
+  },
+  {
+    path: "/profile/",
+    element: <ProfilePage/>,
   },
 ]);
 

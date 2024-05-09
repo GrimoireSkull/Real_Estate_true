@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { BsFlag } from "react-icons/bs";
 import { TiBookmark } from "react-icons/ti";
 import { AiOutlineSend, AiOutlineUser } from "react-icons/ai";
+import { Link as LinkScroll } from 'react-scroll'
 
 const Shortcutbar = () => {
   return (
@@ -15,11 +16,11 @@ const Shortcutbar = () => {
             </div>
             {/* Middle Left */}
             <div className = "lg:flex gap-5">
-                <button className = "">Overview</button>
-                <button className = "">About</button>
-                <button className = "">Location</button>
-                <button className = "">Mortgage</button>
-                <button className = "">RE Agent</button>
+                <LinkScroll to= 'carousel' smooth={true} duration={500}><button>Overview</button></LinkScroll>
+                <LinkScroll to= 'about' smooth={true} duration={500}><button>About</button></LinkScroll>
+                <LinkScroll to= 'location' smooth={true} duration={500}><button>Location</button></LinkScroll>
+                <LinkScroll to= 'mortgage' smooth={true} duration={500}><button>Mortgage</button></LinkScroll>
+                <LinkScroll to= 'realEstate' smooth={true} duration={500}><button>RE Agent</button></LinkScroll>
             </div>
             {/* Middle Right */}
             <div className = "flex text-gray-600">

@@ -5,6 +5,7 @@ import App from './App';
 import PListPage from './pages/PListPage';
 import ProfilePage from './pages/ProfilePage';
 import {rentalsData} from './components/Rentals';
+//import 'bootstrap/dist/css/bootstrap.min.css';
 
 import {
   createBrowserRouter,

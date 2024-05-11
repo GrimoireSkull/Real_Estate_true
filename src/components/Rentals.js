@@ -30,8 +30,8 @@ const rentalsData = [
 const Rentals = () => {
   return (
     <div className = "py-3 sm:py-5">
-        <div className = "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-            {rentalsData.map((rental) => <Rental Id = {rental.Id} title = {rental.title} image = {rental.image[0]} price = {rental.price} views = {rental.viewCount}/>)}
+        <div className = "grid grid-cols-4 gap-4">
+            {rentalsData.map((rental) => <Rental Id = {rental.Id} title = {rental.title} image = {rental.image[0]} price = {rental.price} views = {rental.viewCount} tag = {rental.tags[0]}/>)}
         </div>
     </div>
   )

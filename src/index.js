@@ -5,6 +5,7 @@ import App from './App';
 import PListPage from './pages/PListPage';
 import ProfilePage from './pages/ProfilePage';
 import {rentalsData} from './components/Rentals';
+import ShortlistPage from './pages/ShortlistPage';
 //import 'bootstrap/dist/css/bootstrap.min.css';
 
 import {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "/profile/",
     element: <ProfilePage/>,
+  },
+  {
+    path: "/shortlist/",
+    element: <ShortlistPage/>,
   },
 ]);
 

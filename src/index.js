@@ -6,6 +6,10 @@ import PListPage from './pages/PListPage';
 import ProfilePage from './pages/ProfilePage';
 import {rentalsData} from './components/Rentals';
 import ShortlistPage from './pages/ShortlistPage';
+import SellerPage from './pages/SellerPage';
+import AgentUpdatePage from './pages/AgentUpdatePage';
+import UpdatePropertyFormPage from './pages/UpdatePropertyFormPage';
+import UpdatePropertyPage from './pages/UpdatePropertyPage';
 //import 'bootstrap/dist/css/bootstrap.min.css';
 
 import {
@@ -29,6 +33,18 @@ const router = createBrowserRouter([
   {
     path: "/shortlist/",
     element: <ShortlistPage/>,
+  },
+  {
+    path: "/seller/",
+    element: <SellerPage/>,
+  },
+  {
+    path: "/agentUpdate/",
+    element: <AgentUpdatePage/>,
+  },
+  {
+    path: "/updateP/:Id",
+    element: <UpdatePropertyPage rentals={rentalsData}/>,
   },
 ]);
 

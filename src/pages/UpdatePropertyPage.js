@@ -12,7 +12,7 @@ import { TiBookmark } from "react-icons/ti";
 import { BsFillEyeFill } from "react-icons/bs";
 import { BiBed, BiBath } from "react-icons/bi";
 
-const PListPage = ({ rentals }) => {
+const UpdatePropertyPage = ({ rentals }) => {
   const { Id } = useParams(); // Retrieve the rental ID from the URL
   const rental = rentals.find(rental => rental.Id === Id); // Find the rental in the array
 
@@ -78,10 +78,13 @@ const PListPage = ({ rentals }) => {
         <Mortgage />
       </div>
       <RealEstateAgent />
-      <RatingPopUp />
+      <div className=' ml-[45rem] flex gap-10 text-[20px] py-5'>
+        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 pb-2 px-3 rounded-full">Update</button>
+        <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-1 pb-2 px-3 rounded-full">Delete</button>
+      </div>
       <Footer />
     </div>
   )
 }
 
-export default PListPage
+export default UpdatePropertyPage

@@ -4,7 +4,7 @@ import { Button, Checkbox, Label, Modal, TextInput } from "flowbite-react";
 import { useState } from "react";
 import logo from '../assets/logo.png';
 
-export function RatingPopUp() {
+export function SellerRatingPopup() {
     const [openModal, setOpenModal] = useState(false);
     const [email, setEmail] = useState('');
 
@@ -15,13 +15,13 @@ export function RatingPopUp() {
 
     return (
         <>
-            <div className='ml-[50rem] pb-6'>
-                <Button onClick={() => setOpenModal(true)}>Purchase</Button>
+            <div className='pb-6'>
+                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 pb-2 px-3 rounded-full" onClick={() => setOpenModal(true)}>Rate</button>
             </div>
             <Modal show={openModal} size="md" onClose={onCloseModal} popup>
                 <Modal.Header />
                 <Modal.Body>
-                    <h3 className="px-5 text-xl font-medium text-gray-900 dark:text-white">Purchase Sucessful!</h3>
+                    <h3 className="px-5 text-xl font-medium text-gray-900 dark:text-white">Rate your agent!</h3>
                     <form class="p-4 md:p-5">
                         <div class="grid gap-4 mb-4 grid-cols-2">
                             <div class="col-span-2 flex items-center gap-4">
@@ -56,4 +56,4 @@ export function RatingPopUp() {
 }
 
 
-export default RatingPopUp
+export default SellerRatingPopup
